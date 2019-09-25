@@ -25,4 +25,9 @@ print "<br>Eesnimi: ".$eesNimi."<br>";
 print "Perenimi: ".$pereNimi."<br>";
 print "Email: ".$email."<br>";
 print "Vanus: ".$vanus."<br>";
+print "Pikkus: ".$pikkus."<br>";
 print "Kaal: ".$kaal."<br>";
+
+//muutujate dünaamiline defineerimine
+$bmi = $kaal / ($pikkus * $pikkus);
+print "<br> Kehamassi index: ".$bmi;
