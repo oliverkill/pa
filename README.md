@@ -29,3 +29,7 @@ Lükka lokaalsest repost kirjeldus kaugreposse (näiteks github.com)
 git push -uf origin master
 ```
 Kus origin on ühenduse nimi ja master on peaharu
+* Võimalik on teha ka commit ja push teha PhpStorm gui-s
+    * Commitimiseks "VCS" -> "Commit" või "Ctrl + K". Valid vastava(d) failid ning tekib ülevaade muudatustest. Tegevuse lõpetamiseks "Commit".
+    * Pushimiseks "VCS" -> "git" -> "Push..." või "Ctrl + Shift + K". Näitab milliseid commited faile on võimalik pushida. Tegevuse lõpetamiseks "Push".
+        * Mõlema korraga tegemiseks on "Commit" menu all olemas "Commit and push" valik.
