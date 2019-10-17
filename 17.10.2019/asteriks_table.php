@@ -5,9 +5,8 @@ for($rida=1; $rida<=5; $rida++){
         print '&nbsp;&nbsp;';
     }
     for ($col = 1; $col <=5;$col++) {
-        if ($rida <= $col) {
-            $column = ($col - 1)
-            echo ;
+        if ($rida >= $col) {
+            echo '&nbsp;*';
         }
     }
     print '<br>';
