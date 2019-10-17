@@ -24,10 +24,10 @@
 <?php
 $vanus = (int)$_GET ["age"];
 if (empty($vanus)) {
-    print 'Head juubeliaastat';
+    print 'VÄLI ON TÜHI!';
 }
 else if ($vanus % 5 === 0) {
-    print 'VÄLI ON TÜHI!';
+    print 'Head juubeliaastat';
 }
 else {
     print 'Veel ei ole juubeliaasta';
