@@ -46,3 +46,39 @@ do {
     print $number.'<br>';
     $number++;
 } while ($number <= 15);
+print '<hr>';
+for ($a = 1; $a <=20; $a++) {
+    if ($a < 2) {
+        print $a.' -antud arv ei kuulu valitud vahemiku sisse<br>';
+    }
+    else {
+        $divider = 2;
+        while ($a % $divider != 0) {
+            $divider++;
+        }
+        if ($a == $divider) {
+            print $a.' on algarv<br>';
+            $sum = $sum + $a;
+        }
+        else {
+            print $a.' ei ole algarv<br>';
+        }
+    }
+}
+print '<hr>';
+print 'Antud vahemikus olevate algarvude summa on '.$sum;
+print '<hr>';
+$b = 1000000;
+$cnt = 1;
+$sum = 0;
+while ($cnt <= $b) {
+    if ($cnt % 2 == 0) {
+        $sum = $sum - 1/($cnt*2-1);
+    }
+    else {
+        $sum = $sum + 1 / ($cnt * 2 - 1);
+    }
+    $cnt++;
+}
+print 'Arvutatud pi = '.($sum * 4).'<br>';
+print 'Kontorll pi = '.pi();
