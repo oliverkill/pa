@@ -23,9 +23,12 @@
 </html>
 <?php
 $vanus = (int)$_GET ["age"];
-if ($vanus % 5 === 0) {
-    print 'Head juubeli aastat';
+if (empty($vanus)) {
+    print 'Head juubeliaastat';
+}
+else if ($vanus % 5 === 0) {
+    print 'VÄLI ON TÜHI!';
 }
 else {
-    print 'Veel ei ole juubeli aasta';
+    print 'Veel ei ole juubeliaasta';
 }
